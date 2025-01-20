@@ -12,6 +12,14 @@ with st.expander('Data'):
   df = pd.read_csv(url, sep=',')
   df.drop(columns=['Unnamed: 0'], inplace=True)
   df
+
+  st.write('**X**')
+  X=df.drop('species',axis=1)
+  X
+
+  st.write('**y**')
+  y=df.species
+  y
   
 
 
